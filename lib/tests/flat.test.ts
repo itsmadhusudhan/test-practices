@@ -1,4 +1,4 @@
-import { flat } from "./flat";
+import { flat } from "../flat";
 
 describe("Test array flat", () => {
   test("Should flatten the given array", () => {

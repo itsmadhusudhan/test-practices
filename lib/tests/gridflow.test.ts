@@ -1,4 +1,4 @@
-import { exposeSomething, layout } from "./gridflow";
+import { exposeSomething, layout } from "../gridflow";
 
 test("Grid flow to work", () => {
   const data = [
