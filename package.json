@@ -4,8 +4,8 @@
   "description": "",
   "private": "true",
   "scripts": {
-    "watchAll": "jest watchAll",
-    "watch": "jest --watch"
+    "test": "jest watchAll",
+    "test:ci": "jest --ci --reporters='default' --reporters='./github-actions-reporter'"
   },
   "devDependencies": {
     "@types/jest": "^29.2.3",
