@@ -3,8 +3,10 @@ import { debounce } from "../debounce";
 jest.useFakeTimers();
 jest.spyOn(global, "setTimeout");
 
+const dummy = () => {};
+
 test("Debounce function to work", () => {
-  const fakeFn = jest.fn(console.log);
+  const fakeFn = jest.fn(dummy);
 
   const callback = debounce<any>(fakeFn, 300);
 
@@ -19,7 +21,7 @@ test("Debounce function to work", () => {
 });
 
 test("Debounce function to work with delay", () => {
-  const fakeFn = jest.fn(console.log);
+  const fakeFn = jest.fn(dummy);
 
   const callback = debounce<any>(fakeFn, 300);
 
