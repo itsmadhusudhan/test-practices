@@ -4,7 +4,8 @@
   "description": "",
   "private": "true",
   "scripts": {
-    "test": "jest watchAll",
+    "test": "jest",
+    "test-file": "jest --watch ./lib/tests/mergeSort.test.ts",
     "test:ci": "jest --ci --reporters='default' --reporters='./github-actions-reporter'"
   },
   "devDependencies": {

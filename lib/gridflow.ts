@@ -83,8 +83,6 @@ export function layout(
     };
   });
 
-  console.log(results);
-
   return arr;
 }
 
